@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>FrugalProf's Video Overlay Page</title>
+        <link rel="stylesheet" href="style.css" />
+        <script src="jquery-3.5.1.min.js"></script>
+        <style>.ib { display:inline-block; }</style>
+        <script src="https://www.w3counter.com/tracker.js?id=136092"></script>
+    </head>
+    <body>
+        <a href="../">Home</a>
+        <div class="app">
+            <div class="header">
+                <div class="load-controls">
+                    <div class="btn-group">
+                        <label for="file-1">
+                            <button class="loadBtn disabled">
+                                Load Video 1
+                            </button>
+                        </label>
+                        <input
+                            type="file"
+                            id="file-1"
+                            name="files[]"
+                            style="display: none;"
+                            accept=".mp4"
+                            />
+                    </div>
+                    <div class="btn-group">
+                        <label for="file-2">
+                            <button class="loadBtn disabled">
+                                Load Video 2
+                            </button>
+                        </label>
+                        <input
+                            type="file"
+                            id="file-2"
+                            name="files[]"
+                            style="display: none;"
+                            accept=".mp4"
+                            />
+                    </div>
+                    <div class="btn-group">
+                        <label for="file-3">
+                            <button class="loadBtn disabled">
+                                Load Video 3
+                            </button>
+                        </label>
+                        <input
+                            type="file"
+                            id="file-3"
+                            name="files[]"
+                            style="display: none;"
+                            accept=".mp4"
+                            />
+                    </div>
+                </div>
+                <div class="opacity-controls">
+                    <div class="slidecontainer hide">
+                        <input
+                            type="range"
+                            min="1"
+                            max="100"
+                            value="100"
+                            class="slider"
+                            id="Slide_Opacity"
+                            />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="drag-controls">
+                        <button class="dragBtn">Drag And Change Opacity Video 1</button>
+                        <button class="dragBtn">Drag And Change Opacity Video 2</button>
+                        <button class="dragBtn">Drag And Change Opacity Video 3</button>
+                    </div>
+                </div>
+                <div class="vid-controls">
+                    <div class="ib">
+                        <div class="row">
+                            <button class="vid-control-button" id="start-vid-1">Play Video 1</button>
+                            <button class="vid-control-button" id="stop-vid-1">Stop Video 1</button>
+                            <!--                            <button class="vid-control-button" id="pause-vid-1">Pause Video 1</button>-->
+                        </div>
+                        <div class="row">
+                            <button class="vid-control-button" id="fb-vid-1">-1 Frame</button>
+                            <button class="vid-control-button" id="ff-vid-1">+1 Frame</button>
+                        </div>
+                    </div>
+                    <div class="ib">
+                        <div class="row">
+                            <button class="vid-control-button" id="start-vid-2">Play Video 2</button>
+                            <button class="vid-control-button" id="stop-vid-2">Stop Video 2</button>
+                            <!--                            <button class="vid-control-button" id="pause-vid-2">Pause Video 2</button>-->
+                        </div>
+                        <div class="row">
+                            <button class="vid-control-button" id="fb-vid-2">-1 Frame</button>
+                            <button class="vid-control-button" id="ff-vid-2">+1 Frame</button>
+                        </div>
+                    </div>
+                    <div class="ib ">
+                        <div class="row">
+                            <button class="vid-control-button" id="start-vid-3">Play Video 3</button>
+                            <button class="vid-control-button" id="stop-vid-3">Stop Video 3</button>
+                            <!--                            <button class="vid-control-button" id="pause-vid-3">Pause Video 3</button>-->
+                        </div>
+                        <div class="row">
+                            <button class="vid-control-button" id="fb-vid-3">-1 Frame</button>
+                            <button class="vid-control-button" id="f        f-vid-3">+1 Frame</button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <button class="vid-control-button" id="play-all">Play All Videos</button>
+                        <button class="vid-control-button" id="stop-all">Stop All Videos</button>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="main"></div>
+        </div>
+        <script src="script.js"></script>
+
+    </body>
+</html>
